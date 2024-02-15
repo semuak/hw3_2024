@@ -214,16 +214,52 @@ first div in the grid  and place it in the grid. */
 
 /* Add your media query here */
 
+@media only screen and (min-width: 800px){
 
   /* Step 9: Write the selector/rule property to style the nav element */
-
+  nav{
+    text-align: right;
+    padding: 30px 0;
+  }
  
   /* Step 10: Write the selector/rule property to update the .container class */
+  .container {
+    display: grid;
+    grid-template-columns: 50px auto 500px auto 50px;
+  }
+ 
 
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
+  .about{
+    grid-column: 3 / span 2;
+  }
+  .clients{
+    grid-column: 3 / span 2;
+  }
+  .method-image{
+    grid-column: 3 / span 2;
+  }
+  .contact-image{
+    grid-column: 3 / span 2;
+  }
 
-
+  .method{
+    grid-column: 2 / span 2;
+  }
+  .contact{
+    grid-column: 2 / span 2;
+  }
+  .about-image{
+    grid-column: 2 / span 2;
+  }
+  .clients-image{
+    grid-column: 2 / span 2;
+  }
+  
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
-
+  .text-block{
+    max-height: 250px;
+  }
+}
