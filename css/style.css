@@ -143,7 +143,7 @@ a:-webkit-any-link{
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-row-gap: 15px;
+  grid-gap: 15px;
 }
 
 
