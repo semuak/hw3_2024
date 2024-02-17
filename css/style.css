@@ -143,7 +143,8 @@ a:-webkit-any-link{
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 15px; 
+  /* misinterpreted instructions, needed grid gap all around */
 }
 
 
@@ -151,7 +152,7 @@ a:-webkit-any-link{
 first div in the grid  and place it in the grid. */
 .container div:first-child{
   grid-column: 1/-1;
-  background-image:url('../images/header.jpg');
+  background-image:url('../images/header.jpg'); /* worked without .. locally but needed .. on github */
 }
 
 
@@ -261,5 +262,6 @@ first div in the grid  and place it in the grid. */
  /* Step 13:Write the selector/rule property to update the .text-block class */
   .text-block{
     max-height: 250px;
+    overflow: scroll;
   }
 }
